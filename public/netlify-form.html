@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Netlify Forms</title></head>
+<body>
+  <!-- Netlify form detection for AJAX submissions from the Next.js app -->
+  <form name="rsvp" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="tel" name="phone" />
+    <input type="radio" name="attending" />
+    <select name="guest_count"></select>
+    <input type="checkbox" name="attending_events" />
+    <input type="radio" name="guess_emotional_first" />
+    <input type="radio" name="wedding_mood" />
+    <textarea name="message"></textarea>
+    <textarea name="advice_for_forever"></textarea>
+  </form>
+</body>
+</html>
