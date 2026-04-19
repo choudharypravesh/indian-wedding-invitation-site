@@ -352,7 +352,7 @@ export default function WeddingPage() {
           className={gateFading ? 'fade-out' : ''}
           onClick={handleGateClick}
         >
-          <video ref={entryVideoRef} playsInline preload="auto" muted>
+          <video ref={entryVideoRef} playsInline preload="auto" muted poster='/images/poster-opening.png'>
             <source
               src="/card-opening.mp4"
               type="video/mp4"
@@ -748,20 +748,7 @@ export default function WeddingPage() {
             </p>
           </div>
 
-          {/* Hidden form for Netlify bot detection */}
-          <form name="rsvp" data-netlify="true" hidden>
-            <input type="text" name="name" />
-            <input type="tel" name="phone" />
-            <input type="radio" name="attending" />
-            <select name="guest_count"></select>
-            <input type="checkbox" name="attending_events" />
-            <input type="radio" name="guess_emotional_first" />
-            <input type="radio" name="wedding_mood" />
-            <textarea name="message"></textarea>
-            <textarea name="advice_for_forever"></textarea>
-          </form>
-
-          <form id="rsvp-form" className="rsvp-form" name="rsvp" data-netlify="true" onSubmit={handleSubmit}>
+          <form id="rsvp-form" className="rsvp-form" name="rsvp" method="POST" data-netlify="true" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="rsvp" />
 
             {/* Guest Details */}
@@ -1023,11 +1010,9 @@ export default function WeddingPage() {
               </svg>
             )}
           </div>
-          <h3 className="modal-title">{modal.type === 'success' ? 'Thank You!' : 'Oops!'}</h3>
+          <h3 className="modal-title">Thank You!</h3>
           <p className="modal-msg">
-            {modal.type === 'success'
-              ? "We can't wait to celebrate with you on our special day!"
-              : 'There was an error submitting your RSVP. Please try again.'}
+               We can't wait to celebrate with you on our special day!
           </p>
           <button className="modal-close-btn" onClick={closeModal}>Close</button>
         </div>
