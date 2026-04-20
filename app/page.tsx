@@ -602,7 +602,7 @@ export default function WeddingPage() {
           <div className="text-center reveal" style={{ marginBottom: '3rem' }}>
             <span className="section-label">The Celebration Unfolds</span>
             <h2 className="section-heading" style={{ color: 'var(--terracotta)' }}>
-              Five Sacred<br />Ceremonies
+              Join Us For An <br />Evening Of Celebration
             </h2>
             <div className="ornament mt-4">
               <div className="ornament-line rev"></div>
@@ -613,90 +613,10 @@ export default function WeddingPage() {
             </div>
           </div>
 
-          {/* Event I — Haldi */}
+          {/* Event I — Reception */}
           <div className="event-block reveal">
             <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony I · Tuesday, 30th June 2026 · 10:00 AM</p>
-              <h3 className="event-title">Haldi Ceremony</h3>
-              <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
-                Venue: Umang Garden &amp; Resort
-              </p>
-            </div>
-            <div className="event-video-wrap">
-              <video autoPlay muted loop playsInline>
-                <source
-                  src="./haldi.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <div className="event-sep reveal"><div className="event-sep-line"></div><div className="event-sep-dot"></div><div className="event-sep-line"></div></div>
-
-          {/* Event II — Ring Ceremony */}
-          <div className="event-block reveal">
-            <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony II · Tuesday, 30th June 2026 · 6:00 PM</p>
-              <h3 className="event-title">Ring Ceremony</h3>
-              <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
-                Venue: Umang Garden &amp; Resort
-              </p>
-            </div>
-            <div className="event-video-wrap">
-              <video autoPlay muted loop playsInline>
-                <source
-                  src="./ring.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <div className="event-sep reveal"><div className="event-sep-line"></div><div className="event-sep-dot"></div><div className="event-sep-line"></div></div>
-
-          {/* Event III — Sangeet */}
-          <div className="event-block reveal">
-            <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony III · Tuesday, 30th June 2026 · 8:00 PM</p>
-              <h3 className="event-title">Sangeet Night</h3>
-              <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
-                Venue: Umang Garden &amp; Resort
-              </p>
-            </div>
-            <div className="event-video-wrap">
-              <video autoPlay muted loop playsInline>
-                <source
-                  src="./sangeet.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <div className="event-sep reveal"><div className="event-sep-line"></div><div className="event-sep-dot"></div><div className="event-sep-line"></div></div>
-
-          {/* Event IV — Wedding */}
-          <div className="event-block reveal">
-            <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony IV · Wednesday, 1st July 2026 · 9:00 AM</p>
-              <h3 className="event-title">Shubh Vivah</h3>
-              <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
-                Venue: Umang Garden &amp; Resort
-              </p>
-            </div>
-            <div className="event-video-wrap">
-              <video autoPlay muted loop playsInline>
-                <source
-                  src="./wedding.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <div className="event-sep reveal"><div className="event-sep-line"></div><div className="event-sep-dot"></div><div className="event-sep-line"></div></div>
-
-          {/* Event V — Reception */}
-          <div className="event-block reveal">
-            <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony V · Wednesday, 1st July 2026 · 7:30 PM Onwards</p>
+              <p className="event-subtitle">Ceremony I · Wednesday, 1st July 2026 · 7:30 PM Onwards</p>
               <h3 className="event-title">Reception &amp; Dinner</h3>
               <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
                 Venue: Umang Garden &amp; Resort
@@ -793,14 +713,7 @@ export default function WeddingPage() {
               <div className="checkbox-row">
                 <label className="checkbox-pill">
                   <div>
-                    <span>Day 1: Haldi, Ring Ceremony &amp; Sangeet</span>
-                    <small className="checkbox-date">Tuesday, 30th June 2026</small>
-                  </div>
-                  <input type="checkbox" name="attending_events" value="30th June" />
-                </label>
-                <label className="checkbox-pill">
-                  <div>
-                    <span>Day 2: Wedding &amp; Reception</span>
+                    <span>Reception &amp; Dinner</span>
                     <small className="checkbox-date">Wednesday, 1st July 2026</small>
                   </div>
                   <input type="checkbox" name="attending_events" value="1st July" />
@@ -947,7 +860,7 @@ export default function WeddingPage() {
                   color: 'rgba(255,255,255,0.5)',
                 }}
               >
-                30th June — 1st July 2026 · Umang Garden &amp; Resort, Bhopal (M.P.)
+                1st July 2026 · Umang Garden &amp; Resort, Bhopal (M.P.)
               </p>
             </div>
           </div>
