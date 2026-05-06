@@ -276,7 +276,7 @@ export default function WeddingPage() {
     data.attending_events = formData.getAll('attending_events').map(String);
 
     try {
-      await fetch('/', {
+      await fetch('/netlify-form.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode(data),
@@ -406,17 +406,15 @@ export default function WeddingPage() {
             <p className="blessings-text">
               With the grace of God &amp; Blessings of
               <br />
-              Grandparents Shree K.M. Choudhary &amp; Smt. Sunanda Choudhary,
-              <br />
-              Late Shree R.K. Bhatnagar &amp; Smt. Lily Bhatnagar
+              our grandparents, 
               <br /><br />
               We joyfully request your gracious presence on the wedding celebration of
             </p>
 
             <div className="couple-block">
               <span className="couple-name shimmer-gold">Srishti</span>
-              <p className="family-line">Daughter of Shree Pranav Bhatnagar &amp; Smt. Jolly Bhatnagar</p>
-              <p className="family-subline">(Granddaughter of Late Shree R.K. Bhatnagar &amp; Smt. Lily Bhatnagar)</p>
+              <p className="family-line">Daughter of Shree Pranav Bhatnagar &amp; Smt. Sheetal Bhatnagar</p>
+              <p className="family-subline">(Granddaughter of Smt. Lily Bhatnagar &amp; Late Shree R.K. Bhatnagar )</p>
             </div>
 
             <div className="ampersand-wrap">
@@ -656,7 +654,7 @@ export default function WeddingPage() {
           {/* Event III — Sangeet */}
           <div className="event-block reveal">
             <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony III · Tuesday, 30th June 2026 · 8:00 PM</p>
+              <p className="event-subtitle">Ceremony III · Tuesday, 30th June 2026 · 7:00 PM</p>
               <h3 className="event-title">Sangeet Night</h3>
               <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
                 Venue: Umang Garden &amp; Resort
@@ -696,7 +694,7 @@ export default function WeddingPage() {
           {/* Event V — Reception */}
           <div className="event-block reveal">
             <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony V · Wednesday, 1st July 2026 · 7:30 PM Onwards</p>
+              <p className="event-subtitle">Ceremony V · Wednesday, 1st July 2026 · 7:00 PM Onwards</p>
               <h3 className="event-title">Reception &amp; Dinner</h3>
               <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
                 Venue: Umang Garden &amp; Resort
@@ -705,7 +703,7 @@ export default function WeddingPage() {
             <div className="event-video-wrap">
               <video autoPlay muted loop playsInline>
                 <source
-                  src="./reception.mp4"
+                  src="./reception-night.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -921,36 +919,18 @@ export default function WeddingPage() {
             <div className="reveal">
               <span className="footer-heading">Compliments &amp; Love From</span>
               <ul className="footer-list">
-                <li>Prajakta</li>
-                <li>Harshal &amp; Priyanka</li>
-                <li>Amit &amp; Anushree</li>
-                <li>Gaurav &amp; Akanksha</li>
-                <li>Sourabh</li>
+                <li>Naisha, Deepee &amp; Mayank</li>
+                <li>Subarna &amp; Piyush</li>
               </ul>
             </div>
 
             <div className="reveal reveal-delay-2">
               <span className="footer-heading">RSVP</span>
               <div className="footer-rsvp-names">
-                <p>Shree Pramod Choudhary &amp; Smt. Jayshree Choudhary</p>
-                <p>Shree Sunil Choudhary &amp; Sushma Choudhary</p>
+                <p>Bhatnagar &amp; Verma family</p>
               </div>
             </div>
-
-            <div className="footer-endnote reveal">
-              <div style={{ opacity: 0.4, height: '1px', width: '120px', background: 'var(--gold-light)', margin: '0 auto 2rem' }}></div>
-              <p
-                style={{
-                  fontFamily: "'Cormorant Garamond',serif",
-                  fontStyle: 'italic',
-                  fontSize: '0.95rem',
-                  color: 'rgba(255,255,255,0.5)',
-                }}
-              >
-                30th June — 1st July 2026 · Umang Garden &amp; Resort, Bhopal (M.P.)
-              </p>
             </div>
-          </div>
 
           <br /><br />
           <div className='text-align-center'>
