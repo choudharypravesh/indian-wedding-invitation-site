@@ -614,7 +614,7 @@ export default function WeddingPage() {
           {/* Event I — Haldi */}
           <div className="event-block reveal">
             <div className="text-center mb-4">
-              <p className="event-subtitle">Ceremony I · Tuesday, 30th June 2026 · 10:00 AM</p>
+              <p className="event-subtitle">Ceremony I · Tuesday, 30th June 2026 · 11:00 AM</p>
               <h3 className="event-title">Haldi Ceremony</h3>
               <p style={{ fontStyle: 'italic', color: 'var(--text-light)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
                 Venue: Umang Garden &amp; Resort
